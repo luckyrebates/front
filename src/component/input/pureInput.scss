@@ -1,0 +1,17 @@
+.r_component_pure_input {
+  padding: 0px 4px;
+  margin: 0px;
+  &:focus {
+    outline: none; /* 移除高亮框 */
+    box-shadow: none; /* 如果需要，也可以移除阴影效果 */
+  }
+}
+.r_component_pure_input_number {
+  .r_component_pure_input_number_tips {
+    color: #aaa;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+}

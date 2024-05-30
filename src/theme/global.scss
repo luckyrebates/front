@@ -1,0 +1,39 @@
+@import './constant/const';
+
+.r_global_main_background_color {
+  background-color: #121212;
+}
+.r_global_red_packet_activity_detail_help_tips {
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.r_global_border_blink {
+  animation: r_global_border_blink_animation 3s infinite;
+}
+
+@keyframes r_global_border_blink_animation {
+  0%,
+  100% {
+    opacity: 1;
+    // box-shadow: 0 0 5px $goldColor;
+    box-shadow: 0 0 15px $goldColor;
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+}
+
+.r_global_cursor_pointer {
+  cursor: pointer;
+}
+
+.r_global_a {
+  outline: none;
+  text-decoration: none;
+  color: #90caf9;
+  &:visited {
+    color: #90caf9;
+  }
+}

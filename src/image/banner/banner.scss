@@ -1,0 +1,76 @@
+@import '../../theme/constant/const';
+
+.r_banner_base {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  color: #eeeeee;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  .r_banner_image {
+    background-size: cover;
+    mask: linear-gradient(to left, rgba(#121212, 1), rgba(#121212, 0));
+    mask-size: 100% 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .r_banner_box_business {
+    font-size: 28px;
+  }
+  .r_banner_box_title {
+    font-size: 50px;
+    color: #fdd835;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .r_banner_box_content {
+    font-size: 20px;
+    & + .r_banner_box_content {
+      margin-top: 16px;
+    }
+  }
+  .r_banner_box_tip {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ddd;
+    & + .r_banner_box_tip {
+      margin-top: 10px;
+    }
+  }
+}
+
+.r_banner_lido_banner {
+  background: linear-gradient(rgba(243, 130, 123, 0.5) 0%, rgba(234, 235, 161, 0.5) 100%);
+  .r_banner_lido_banner_logo {
+    height: 300px;
+    position: absolute;
+    right: 160px;
+    z-index: 1;
+    bottom: 20px;
+  }
+  .r_banner_lido_banner_sun {
+    height: 800px;
+    position: absolute;
+    bottom: -300px;
+    right: -150px;
+    z-index: 0;
+  }
+  .r_banner_lido_banner_text {
+    margin-left: 100px;
+  }
+}
+
+.r_banner_uniswap_banner {
+  $color: #ec407a;
+  background: linear-gradient(to left, rgba($color, 0.2) 0%, rgba($color, 0) 100%);
+  justify-content: space-between;
+  .r_banner_uniswap_banner_logo {
+    width: 200px;
+    margin-left: 100px;
+  }
+}

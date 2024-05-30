@@ -1,0 +1,22 @@
+.r_component_tips_text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.r_component_boom {
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  background-image: url('/images/boom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  & > span {
+    transform: skew(-20deg, 0deg);
+    margin-left: 12px;
+    font-weight: 900;
+    font-size: 14px;
+    color: #000;
+  }
+}

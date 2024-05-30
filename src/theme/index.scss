@@ -1,0 +1,28 @@
+$commonBorderRadius: 8px;
+
+@import './global.scss';
+
+#root {
+  // image banner scss
+  @import '../image/banner/banner.scss';
+
+  // compoment scss
+  @import '../component/footer/footer.scss';
+  @import '../component/tabs/tabs.scss';
+  @import '../component/header/header.scss';
+  // @import '../component/ball/ball.scss';
+  @import '../component/productCard/productCard.scss';
+  @import '../component/starBackground/starBackground.scss';
+  @import '../component/button/pureButton.scss';
+  @import '../component/loading/interestingText1.scss';
+  @import '../component/loading/loading1.scss';
+  @import '../component/input/pureInput.scss';
+  @import '../component/container/container.scss';
+  @import '../component/page/page.scss';
+  @import '../component/text/text.scss';
+
+  // router scss
+  @import '../router/home/home.scss';
+  @import '../router/activity/redPacket/redPacketDetail/detail.scss';
+  @import '../router/activity/task/task.scss';
+}

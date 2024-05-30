@@ -1,0 +1,10 @@
+@import '../../theme/constant/const';
+
+.r_component_inner_page {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  & > h3 {
+    display: flex;
+    align-items: center;
+  }
+}

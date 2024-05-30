@@ -1,0 +1,37 @@
+@import '../../../../theme/constant/const';
+
+.r_red_packet_activity_detail {
+  .r_base_info {
+    border: solid 1px #444;
+    border-radius: $commonBorderRadius;
+    padding: 26px;
+    .r_form {
+      font-size: 14px;
+      display: table;
+      .r_form_item {
+        height: 30px;
+        display: table-row;
+        padding: 8px 0px;
+        .r_form_label {
+          font-weight: 500;
+          color: #bdbdbd;
+          display: flex;
+          align-items: center;
+          display: table-cell;
+          .help_icon {
+            margin-left: 4px;
+            color: #bdbdbd;
+            font-size: 16px;
+          }
+        }
+        .r_form_control {
+          padding-left: 20px;
+          display: table-cell;
+          color: #fff;
+          word-wrap: break-word;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}

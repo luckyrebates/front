@@ -1,0 +1,28 @@
+@import '../../../theme/constant/const';
+
+.r_task_list_card {
+  & + .r_task_list_card {
+    margin-top: 26px;
+  }
+}
+
+.r_task_media_list_card {
+  border-top-right-radius: 20px;
+  position: relative;
+  .r_task_media_list_card_tag {
+    position: absolute;
+    background-color: $goldColor;
+    color: #fff;
+    right: 0px;
+    padding: 8px 12px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+.r_task_detail {
+  .r_task_detail_image {
+    border-radius: $commonBorderRadius;
+    width: 300px;
+    margin-right: 40px;
+  }
+}

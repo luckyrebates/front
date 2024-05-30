@@ -1,0 +1,43 @@
+.r_component_interesting_text_1 {
+  display: inline-block;
+  position: relative;
+  .text {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    display: inline-block;
+    animation: r_component_interesting_text_1_floating 1s ease-out infinite alternate;
+  }
+  .shadow {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: #666;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    filter: blur(4px);
+    border-radius: 50%;
+    animation: r_component_interesting_text_1_loading-animation 1s ease-out infinite alternate;
+  }
+}
+@keyframes r_component_interesting_text_1_floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes r_component_interesting_text_1_loading-animation {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
