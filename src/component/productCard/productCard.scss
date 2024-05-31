@@ -1,0 +1,96 @@
+@import '../../theme/constant/const';
+
+.r_component_product_card {
+  font-size: 12px;
+  background: linear-gradient(to bottom, rgba(#311b92, 1) 0%, rgba(#311b92, 0.2) 100%);
+  border-radius: $commonBorderRadius;
+  position: relative;
+  max-width: 290px;
+  .r_image_boom {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: -50px;
+    left: -40px;
+  }
+  .r_buy {
+    position: absolute;
+    bottom: 0; /* 初始位置在容器底部 */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 170px;
+    background-color: #222222;
+    box-shadow: 0 -5px 5px -5px rgba(255, 255, 255, 0.8);
+    padding: 30px 12px;
+    display: none;
+    border-bottom-left-radius: $commonBorderRadius;
+    border-bottom-right-radius: $commonBorderRadius;
+  }
+  .r_buy_show {
+    display: flex;
+    align-items: end;
+  }
+  .r_image {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    img {
+      display: block;
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      border-top-left-radius: $commonBorderRadius;
+      border-top-right-radius: $commonBorderRadius;
+    }
+    .r_product_card_image_tips {
+      position: absolute;
+      top: 26px;
+      background-color: rgba($color: #880e4f, $alpha: 0.95);
+      font-size: 12px;
+      .r_number {
+        font-size: 14px;
+      }
+    }
+  }
+  .r_body {
+    padding: 8px 12px;
+    padding-top: 12px;
+    border-bottom-left-radius: $commonBorderRadius;
+    border-bottom-right-radius: $commonBorderRadius;
+    min-height: 80px;
+    color: #eee;
+    .r_body_content {
+      height: 176px;
+      .r_name {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .r_title {
+          font-size: 16px;
+        }
+        .r_sub_title {
+          font-size: 12px;
+          color: #ddd;
+          margin-left: 8px;
+        }
+      }
+      .r_descript {
+        & + .r_descript {
+          margin-top: 12px;
+        }
+        display: flex;
+        justify-content: space-between;
+        .r_number {
+          color: #fdd835;
+        }
+      }
+    }
+    .r_time_tips {
+      text-align: right;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+  }
+}

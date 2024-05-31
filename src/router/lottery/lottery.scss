@@ -1,0 +1,137 @@
+.r_lottery {
+  max-width: 352px;
+  margin: 0 auto;
+  .r_lottery_title {
+    display: flex;
+    padding-left: 12px;
+    align-items: center;
+    .r_name {
+      font-size: 28px;
+      font-weight: 500;
+      margin-right: 12px;
+    }
+    .r_current_total {
+      color: #ffffff;
+      background-color: #1e88e5;
+      border-top-left-radius: $commonBorderRadius;
+      border-top-right-radius: $commonBorderRadius;
+      flex: 1;
+      padding-left: 20px;
+      .r_round {
+        font-size: 18px;
+        font-style: italic;
+      }
+      .r_bonus_number {
+        color: #ff9800;
+        margin-right: 8px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .r_bonus_unit {
+        font-size: 12px;
+      }
+    }
+  }
+  .r_lottery_body {
+    background-color: #e3f2fd;
+    padding: 8px 12px;
+    border-bottom-left-radius: $commonBorderRadius;
+    border-bottom-right-radius: $commonBorderRadius;
+    .r_tips {
+      background-color: #bbdefb;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 24px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+    .r_button_group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .r_ball_group {
+      width: 246px;
+      & + .r_ball_group {
+        margin-top: 6px;
+      }
+    }
+    .r_all_ball_group_button {
+      text-align: right;
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.r_recently_winning_number {
+  max-width: 334px;
+  margin: 0 auto;
+  .r_list {
+    background-color: #1e88e5;
+    border-radius: $commonBorderRadius;
+    padding-top: 0px;
+    .r_list_title {
+      color: #ffffff;
+      .r_list_title_round {
+        width: 70px;
+      }
+      .r_list_title_number {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .r_list_content {
+      background-color: #ffffff;
+      .r_list_label {
+        width: 70px;
+      }
+    }
+
+    .r_list_footer {
+      justify-content: right;
+      background-color: #ffffff;
+      font-size: 12px;
+    }
+  }
+  .r_divider {
+    border-color: #eeeeee;
+  }
+}
+
+.r_recently_winning_user {
+  margin: 0 auto;
+  max-width: 334px;
+  display: flex;
+  align-items: center;
+  background-color: #1e88e5;
+  border: #bbdefb solid 3px;
+  border-radius: 35px;
+  padding: 8px 12px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  .r_round {
+    margin-right: 10px;
+  }
+  .r_bravo {
+    margin-right: 16px;
+    color: #ff9800;
+    font-weight: 500;
+  }
+  .r_user_info {
+    font-size: 14px;
+    margin-left: 6px;
+    .r_bonus_number {
+      color: #ff9800;
+      margin-left: 8px;
+    }
+    .r_bonus_unit {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../theme/constant/const';
+
+.r_component_tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  button {
+    margin-right: 8px;
+  }
+  .r_active {
+    color: #fff;
+    background-image: linear-gradient(to top right, #1976d2, #f44336);
+    border: none;
+  }
+}

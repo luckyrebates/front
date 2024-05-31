@@ -1,0 +1,25 @@
+.r_component_pure_button {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  border: none;
+  background-color: transparent;
+  color: #90caf9;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+}
+$r_component_pure_button_circle_size: 30px;
+.r_component_pure_button_circle {
+  width: $r_component_pure_button_circle_size;
+  height: $r_component_pure_button_circle_size;
+  line-height: $r_component_pure_button_circle_size;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ffd180;
+  color: #000;
+  font-size: 26px;
+  font-weight: 400;
+}
